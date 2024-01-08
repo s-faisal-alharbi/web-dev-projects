@@ -9,8 +9,30 @@ import hotel3 from "../assets/img/project-img3.jpeg"
 import hotel4 from "../assets/img/project-img4.jpeg"
 import hotel5 from "../assets/img/project-img5.jpeg"
 import hotel6 from "../assets/img/project-img6.jpeg"
+import { useTranslation } from 'react-i18next'
+
 
 export const Hotels = () => {
+    const { t } = useTranslation();
+    const responsive = {
+        superLargeDesktop: {
+          // the naming can be any, depends on you.
+          breakpoint: { max: 4000, min: 3000 },
+          items: 5
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 3
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 2
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1
+        }
+      };
     const swiper = new Swiper('.swiper', {
         // Optional parameters
         direction: 'horizontal',
@@ -49,37 +71,37 @@ export const Hotels = () => {
                     <div class="swiper-slide">
                         <img src={hotel1} alt="slide1"></img>
                         <div class='swiper-slide-content'>
-                            <div class='swiper-slide-title'>hotel name</div>
+                            <div class='swiper-slide-title'>{t('hotel1 name')}</div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <img src={hotel2} alt="slide2"></img>
                         <div class='swiper-slide-content'>
-                            <div class='swiper-slide-title'>hotel name</div>
+                            <div class='swiper-slide-title'>{t('hotel2 name')}</div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <img src={hotel3} alt="slide3"></img>
                         <div class='swiper-slide-content'>
-                            <div class='swiper-slide-title'>hotel name</div>
+                            <div class='swiper-slide-title'>{t('hotel3 name')}</div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <img src={hotel1} alt="slide4"></img>
                         <div class='swiper-slide-content'>
-                            <div class='swiper-slide-title'>hotel name</div>
+                            <div class='swiper-slide-title'>{t('hotel4 name')}</div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <img src={hotel2} alt="slide5"></img>
                         <div class='swiper-slide-content'>
-                            <div class='swiper-slide-title'>hotel name</div>
+                            <div class='swiper-slide-title'>{t('hotel5 name')}</div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <img src={hotel3} alt="slide6"></img>
                         <div class='swiper-slide-content'>
-                            <div class='swiper-slide-title'>hotel name</div>
+                            <div class='swiper-slide-title'>{t('hotel6 name')}</div>
                         </div>
                     </div>
                 </div>

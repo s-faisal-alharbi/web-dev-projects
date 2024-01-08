@@ -9,38 +9,40 @@ import projImg6 from "../assets/img/project-img6.jpeg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { useTranslation } from 'react-i18next'
+
 
 export const Projects = () => {
-
+  const { t } = useTranslation();
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: t("ProjTitle1"),
+      description: t("ProjDesc1"),
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: t("ProjTitle2"),
+      description: t("ProjDesc2"),
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: t("ProjTitle3"),
+      description: t("ProjDesc3"),
       imgUrl: projImg3,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: t("ProjTitle4"),
+      description: t("ProjDesc4"),
       imgUrl: projImg4,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: t("ProjTitle5"),
+      description: t("ProjDesc5"),
       imgUrl: projImg5,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: t("ProjTitle6"),
+      description: t("ProjDesc6"),
       imgUrl: projImg6,
     },
   ];
@@ -53,8 +55,8 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h2>{t("Projects")}</h2>
+                <p>{t('ProjPrg')}</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -82,11 +84,11 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="second">
+                      <p>{t('ProjTab2Prg')}</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>{t('ProjTab3Prg')}</p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
