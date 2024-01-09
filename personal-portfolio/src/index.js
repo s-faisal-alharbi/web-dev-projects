@@ -5,9 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const loadingMarkup =(
+  <div className='py-4 text-center'>
+    <h2>Loading...</h2>
+  </div>
+)
 root.render(
   <React.StrictMode>
-    <Suspense fallback={<div>Loading....</div>}>
+    <Suspense fallback={loadingMarkup}>
       <App />
     </Suspense>
   </React.StrictMode>

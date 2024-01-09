@@ -9,6 +9,7 @@ import logo from '../assets/img/logo.jpg';
 import {BrowserRouter as Router} from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import i18n from '../assets/i18n';
+import i18next from "i18next";
 
 const LanguageSelector = () => {
     
@@ -80,7 +81,7 @@ export const NavBar = () => {
               {/* <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
               </HashLink> */}
-              {/* <label className="switch">
+              {/* <label className="switch" onClick => {()=>i18next.changeLanguage(lng_code)} >
                 <input type="checkbox"/>
                 <span className="slider"/>
               </label> */}
