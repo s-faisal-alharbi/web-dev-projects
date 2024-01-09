@@ -7,11 +7,13 @@ import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
+import { HotelsGallery } from './components/HotelsGallery';
+import { Hotels } from './components/Hotels';
 
 import cookies from 'js-cookie'
 import { useTranslation } from 'react-i18next'
-// import { Hotels } from './components/Hotels';
-// import { HotelsGallery } from './components/HotelsGallery';
+
+
 
 const languages = [
 

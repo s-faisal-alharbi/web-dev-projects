@@ -23,29 +23,10 @@ import hotel3 from "../assets/img/project-img3.jpeg"
 
 export const HotelsGallery = () => {
     const { t } = useTranslation();
-    const responsive = {
-        superLargeDesktop: {
-          // the naming can be any, depends on you.
-          breakpoint: { max: 4000, min: 3000 },
-          items: 5
-        },
-        desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 3
-        },
-        tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 2
-        },
-        mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1
-        }
-      };
+    
     var slider = new Swiper(".gallery-slider", {
         sliderPerView: 1,
         loop: true,
-        loopSlides: 3,
         noSwiping: true,
         noSwipingClass: "swiper-slide",
         pagination: {
@@ -58,12 +39,12 @@ export const HotelsGallery = () => {
         observer: true, 
         observeParents: true,
         initialSlide: 1,
-        autoplay: {
-            delay: 5000,
-          },
+        // autoplay: {
+        //     delay: 5000,
+        //   },
     })
     var thumbs = new Swiper(".gallery-thumbs", {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 10,
         centeredSlide: true,
         loop: true,
@@ -78,6 +59,8 @@ export const HotelsGallery = () => {
     slider.controller.control = thumbs;
     thumbs.controller.control = slider;
     return (
+
+        
         <section className="hotels" id="hotelGallery">
         
                         <div class='gallery'>
@@ -138,13 +121,13 @@ export const HotelsGallery = () => {
                             <div class='swiper-container gallery-thumbs'>
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src={hotel1} alt="sli1"></img>
+                                        <img src={hotel1} ></img>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src={hotel2} alt="sli2"></img>
+                                        <img src={hotel2} ></img>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src={hotel3} alt="sli3"></img>
+                                        <img src={hotel3}></img>
                                     </div>
                                     {/* <div class="swiper-slide">
                                         <img src={hotel1} alt="sli4"></img>
@@ -157,10 +140,11 @@ export const HotelsGallery = () => {
                                     </div> */}
                                 </div>
                             </div>
-                            <div class="swiper-pagination"></div>
+                            {/* <div class="swiper-pagination"></div>
         
-                            <div class="swiper-scrollbar"></div>
+                            <div class="swiper-scrollbar"></div> */}
                         </div>
         </section >
+
     )
 }

@@ -4,6 +4,8 @@ import logo from '../assets/img/logo.jpg';
 import LanguageSelector from '../assets/components/LanguageSelector';
 import {BrowserRouter as Router} from "react-router-dom";
 import { useTranslation } from 'react-i18next';
+import Toggle from 'react-toggle'
+import "react-toggle/style.css"
 
 
 export const NavBar = () => {

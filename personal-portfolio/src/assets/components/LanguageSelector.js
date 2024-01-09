@@ -1,5 +1,7 @@
-import React, {useState , Switch} from "react";
+import React, {useState } from "react";
 import i18n from '../i18n';
+
+
 
 const LanguageSelector = () => {
     
@@ -11,13 +13,19 @@ const LanguageSelector = () => {
         setSelectedLanguage(e.target.value);
         localStorage.setItem("lang", e.target.value);
     }
+    
+    
+
+
 
     return (
         
         <select defaultValue={selectedLanguage} onChange={chooseLanguage}>  
             <option value="ar">عربي</option>
             <option value="en">English</option>
-        </select>
+        </select>       
+
+        
     );
 };
 
