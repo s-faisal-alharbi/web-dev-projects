@@ -61,6 +61,7 @@
     "meter1":"الغرف المحجوزة",
     "meter2":"المتاحة",
     "meter3":"اختبار",
-    "meter4":"test"
-  
+    "meter4":"test",
+    "nav_class1":"ms-auto",
+    "nav_class2":"me-auto"
 }

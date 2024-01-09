@@ -91,13 +91,13 @@ nav.navbar {
   transition:  0.32s ease-in-out;
  
 }
-.headbottom__bottom__bar {
+/* .headbottom__bottom__bar {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-}
+} */
 nav.navbar.scrolled {
   padding: 10px 0;
   background-color: #ad8a46;
@@ -115,9 +115,10 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
-  padding: 0 35px;
+  padding: 0 45px ;
   font-size: 18px;
   opacity: 0.75;  
+   display: inline-block;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
@@ -126,6 +127,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 span.navbar-text {
     display: flex;
     align-items: center;
+   
 }
 .social-icon {
     display: inline-block;
