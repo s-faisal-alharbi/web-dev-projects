@@ -1,6 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect, useState } from "react";
+
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
 import { Skills } from "./components/Skills";
@@ -9,9 +10,10 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { HotelsGallery } from "./components/HotelsGallery";
 import { Hotels } from "./components/Hotels";
+import { useTranslation } from "react-i18next";
 
 import cookies from "js-cookie";
-import { useTranslation } from "react-i18next";
+import Switcher from "./assets/components/switch";
 
 
 const languages = [
@@ -51,7 +53,7 @@ function App() {
 
       {/* <Projects /> */}
       <Contact />
-
+      
       <Footer />
     </div>
   );

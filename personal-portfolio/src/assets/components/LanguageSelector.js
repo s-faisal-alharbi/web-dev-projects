@@ -1,32 +1,26 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import i18n from '../i18n';
-
-
+import { Switch } from 'antd';
+import { use } from 'i18next';
 
 const LanguageSelector = () => {
-    
-    const [selectedLanguage, setSelectedLanguage] = useState(i18n.language); // i18n.language contains the language assigned to lng in i18n.js file.
+  const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
 
-    const chooseLanguage = (e) => {
-        e.preventDefault();
-        i18n.changeLanguage(e.target.value);   // i18n.changeLanguage() is used to change the language assigned to lng in i18n.js file.
-        setSelectedLanguage(e.target.value);
-        localStorage.setItem("lang", e.target.value);
-    }
-    
-    
+  const chooseLanguage = (newLanguage) => {
+    // Directly set the new language instead of using e.target.value
+    i18n.changeLanguage(newLanguage);
+    setSelectedLanguage(newLanguage);
+    localStorage.setItem("lang", newLanguage);
+  };
 
-
-
-    return (
-        
-        <select defaultValue={selectedLanguage} onChange={chooseLanguage}>  
-            <option value="ar">عربي</option>
-            <option value="en">English</option>
-        </select>       
-
-        
-    );
+  return (
+    <Switch
+      checked={selectedLanguage === 'ar'} // Condition for initial state
+      onChange={(checked) => {
+        chooseLanguage(checked ? 'ar' : 'en'); // Toggle language based on checked state
+      }}
+    />
+  );
 };
 
 export default LanguageSelector;
