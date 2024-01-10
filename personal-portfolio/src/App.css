@@ -246,19 +246,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
-/* .switch{
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  background-color: red;
-}
+/**** Switch css ***/
 
-.switch input{
-  opacity: 0;
-  width: 0;
-  height: 0;
-} */
 
 /************ Banner Css ************/
 .banner {
