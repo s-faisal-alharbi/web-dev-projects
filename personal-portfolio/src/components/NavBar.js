@@ -45,13 +45,13 @@ export const NavBar = () => {
             <Nav className={t("nav_class1")}>
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>{t('Home')}</Nav.Link>
               <Nav.Link href="#hotels" className={activeLink === 'hotels' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('hotels')}>{t('Hotels')}</Nav.Link>
-              
+
             </Nav>
-            <Nav className={t("nav_class2")}> 
+            <Nav className={t("nav_class2")}>
             <span className="navbar-text">
             {/* <Nav.Link href="#Hotels" className={activeLink === 'hotels' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('hotels')}>{t('Hotels')}</Nav.Link>    */}
             <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>{t('Projects')}</Nav.Link>
-              
+
               <div className="switch">
               <LanguageSelector />
               </div>
@@ -61,5 +61,7 @@ export const NavBar = () => {
         </Container>
       </Navbar>
     </Router>
-  )
+    
+   
+  );
 }

@@ -66,5 +66,7 @@
     "nav_class1":"me-auto",
     "nav_class2":"ms-auto",
     "Lng":"En",
-    "Get_In_Touch": "Get In Touch"
+    "Get_In_Touch": "Get In Touch",
+    "content1":"content",
+    "contentHead":"Title"
 }

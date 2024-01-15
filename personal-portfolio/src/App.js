@@ -11,9 +11,14 @@ import { Footer } from "./components/Footer";
 import { HotelsGallery } from "./components/HotelsGallery";
 import { Hotels } from "./components/Hotels";
 import { useTranslation } from "react-i18next";
+import {Content} from "./components/content1"
+import {Content2} from "./components/content2"
+import {Content3} from "./components/content3"
+import {Content4} from "./components/content4"
 
 import cookies from "js-cookie";
 import Switcher from "./assets/components/switch";
+
 
 
 const languages = [
@@ -40,10 +45,11 @@ function App() {
     document.body.dir = currentLanguage.dir || "rtl";
     document.title = t("app_title");
   }, [currentLanguage, t]);
-  
+
 
 
   return (
+    
     <div className="App">
       <NavBar />
       {/* <Hotels /> */}
@@ -53,8 +59,13 @@ function App() {
 
       {/* <Projects /> */}
       <Contact />
-      
-      <Footer />
+      <Content/>
+      <Content2/>
+      <Content3/>
+      <Content/>
+      <Content2/>
+      <Content4/>
+      {/* <Footer /> */}
     </div>
   );
 }

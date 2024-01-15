@@ -65,5 +65,14 @@
     "nav_class1":"ms-auto",
     "nav_class2":"me-auto",
     "Lng":"Ar",
-    "Get_In_Touch":"تواصل معنا"
+    "Get_In_Touch":"تواصل معنا",
+    "contentHead1":"عنوان محتوى 1",
+    "content1":"محتوى 1",
+    "contentHead2":"عنوان محتوى 2",
+    "content2":"محتوى 2",
+    "contentHead3":"عنوان محتوى 3",
+    "content3":"محتوى 3",
+    "contentHead4":"عنوان محتوى 4",
+    "content4":"محتوى 4"
+    
 }
