@@ -14,7 +14,7 @@ import { useTranslation } from "react-i18next";
 import {Content} from "./components/content1"
 import {Content2} from "./components/content2"
 import {Content3} from "./components/content3"
-import {Content4} from "./components/content4"
+
 
 import cookies from "js-cookie";
 import Switcher from "./assets/components/switch";
@@ -53,18 +53,16 @@ function App() {
     <div className="App">
       <NavBar />
       {/* <Hotels /> */}
-      {/* <HotelsGallery /> */}
+      <HotelsGallery />
       {/* <Banner /> */}
       {/* <Skills /> */}
 
       {/* <Projects /> */}
-      <Contact />
+      {/* <Contact /> */}
       <Content/>
       <Content2/>
       <Content3/>
-      <Content/>
-      <Content2/>
-      <Content4/>
+
       {/* <Footer /> */}
     </div>
   );

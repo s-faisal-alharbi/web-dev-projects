@@ -67,6 +67,12 @@
     "nav_class2":"ms-auto",
     "Lng":"En",
     "Get_In_Touch": "Get In Touch",
-    "content1":"content",
-    "contentHead":"Title"
+    "contentHead1":"Title1",
+    "content1":"Content1",
+    "contentHead2":"Title2",
+    "content2":"Content2",
+    "contentHead3":"Title3",
+    "content3":"Content3",
+    "contentHead4":"Title4",
+    "content4":"Content4"
 }
